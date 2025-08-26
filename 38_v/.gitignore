@@ -1,0 +1,11 @@
+# Compiled executables
+*.exe
+*.out
+a.exe
+a.out
+
+# Backup files
+*~
+*#
+#*#
+*.save
