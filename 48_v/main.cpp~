@@ -1,0 +1,8 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  cout << "How many numbers do you want to enter? 1 to 100? ";
+}

@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+/*
+    #30
+    Problem:
+    Write a program to calculate factorial of N!
+
+    Example: 
+    Factorial of 6 → 6 x 5 x 4 x 3 x 2 x 1 = 720
+
+    Note: 
+    User should only enter a positive number, otherwise reject it and ask to enter again
+
+    Example:
+
+    Input:
+    6
+
+    Outputs:
+    720
+*/
+
+int Factorial(int N)
+{
+  int factorial = 1;
+  for (int i = N; i > 0; i--)
+    {
+      factorial *= i;
+    }
+  return factorial;
+}
+
+int main ()
+{
+  int N;
+  cin >> N;
+  cout << '\n';
+  cout << Factorial(N) << endl;
+  return 0;
+}

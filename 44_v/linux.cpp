@@ -1,0 +1,66 @@
+#include <iostream>
+
+/*
+  The following program is the same but does the effects on a bash terminal.
+  Use it if you use a GNU + Linux distribution with a bash terminal.
+ */
+
+
+using namespace std;
+
+enum enScreenColor {Red=1, Blue=2, Green=3, Yellow=4};
+
+int main()
+{
+    cout << "**************************\n";
+    cout << "Please choose the number of your color\n";
+    cout << "(1) Red\n";
+    cout << "(2) Blue\n";
+    cout << "(3) Green\n";
+    cout << "(4) Yellow\n";
+    cout << "**************************\n\n";
+    cout <<"Your choice: ";
+
+    int c;
+    enScreenColor Color;
+
+    cin >> c;
+    Color = (enScreenColor) c;
+
+    // ANSI escape codes for GNU/Linux terminal colors
+    // Format: \033[<bg>;<fg>m
+    if (Color == enScreenColor::Red)
+    {
+        cout << "\033[41;37m"; // Red background, white text
+    }
+    else if (Color == enScreenColor::Blue)
+    {
+        cout << "\033[44;37m"; // Blue background, white text
+    }
+    else if (Color == enScreenColor::Green)
+    {
+        cout << "\033[42;37m"; // Green background, white text
+    }
+    else if (Color == enScreenColor::Yellow)
+    {
+        cout << "\033[43;30m"; // Yellow background, black text
+    }
+    else
+    {
+        cout << "\033[41;37m"; // Default to red background, white text
+    }
+
+    // Clear the screen to apply the background color
+    cout << "\033[2J";  // Clear screen
+    cout << "\033[H";   // Move cursor to home position
+    
+    // Keep the terminal open to see the result
+    cout << "Your selected color is applied. Press Enter to exit...";
+    cin.ignore(); // Clear the input buffer
+    cin.get();    // Wait for Enter key
+    
+    // Reset colors before exiting
+    cout << "\033[0m";
+    
+    return 0; 
+}

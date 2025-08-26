@@ -1,0 +1,63 @@
+#include <iostream> 
+using namespace std; 
+
+void displayMyCardInfo() {
+
+std::cout << "***********************************" << std::endl;
+std::cout << "Name: Mohammed Abu-Hadhoud." << std::endl;
+std::cout << "Age : 44 Years." << std::endl;
+std::cout << "City : Amman." << std::endl;
+std::cout << "Country : Jordan. " << std::endl;
+std::cout << "***********************************" << std::endl;
+
+}
+
+void printSquareStars() {
+	
+	std::cout << "********" << std::endl;
+ 	std::cout << "********" << std::endl;
+	std::cout << "********" << std::endl;
+	std::cout << "********" << std::endl;	
+	
+}
+
+void printILOVEPROGRAMMING() {
+	std::cout << "I Love Programming!" << std::endl << std::endl;
+ 	std::cout << "I promise to be the best developer ever!" << std::endl << std::endl;
+	std::cout << "I know it will take some time to practice, but I will achieve my goal." << std::endl << std::endl; 
+	std::cout << "Best Regards,"<< std::endl;
+	std::cout << "Abdulrahman Baharoon."<< std::endl;
+}
+
+void printH() {
+	 
+	std::cout << "*   *" << std::endl;
+	std::cout << "*   *" << std::endl;
+	std::cout << "*****" << std::endl;
+	std::cout << "*   *" << std::endl;
+	std::cout << "*   *" << std::endl;
+}
+
+
+
+
+int main() {
+	/*
+	displayMyCardInfo();
+	cout << endl << endl;
+	
+	printSquareStars();
+	cout << endl << endl;
+	
+	printILOVEPROGRAMMING();
+	cout << endl << endl;
+	
+	printH();
+	cout << endl << endl;
+	*/
+	
+	//cout << printH() << endl;
+	printH();
+	return 0;
+	
+}

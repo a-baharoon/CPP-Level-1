@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+void myFunction () {
+  
+  // A function that does not return anything is called a procedure. 
+  cout << "This is my first function, it got excuted :-)" << endl;
+
+
+}
+int main() {
+
+
+
+
+
+
+
+  return 0;
+}

@@ -1,0 +1,41 @@
+#include<iostream>
+
+using namespace std;
+/*
+    #26
+    Problem:
+    Write a program to print numbers from 1 to N.
+
+    Example:
+
+    Input:
+    10
+
+    Outputs:
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+*/
+
+void NumberToOne(int N)
+{
+  for (N; N > 0; N--)
+    cout << N << endl;
+}
+
+
+int main () {
+
+  int N;
+  cin >> N;
+  NumbersToN(N);
+
+return 0;
+}

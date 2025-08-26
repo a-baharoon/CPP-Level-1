@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+enum Color {Red, Green, Yellow, Blue };
+
+
+
+int main() {
+
+  Color MyColor:
+  Direction MyDirection;
+  Week Today;
+  Status MyStatus;
+
+  
+
+  return 0;
+}

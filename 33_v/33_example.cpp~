@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int number;
+  string name;
+  string country;
+
+  cout << "Please enter Employee number: ";
+  cin >> number;
+
+  cout << "Please enter Employee number: ";
+  getline(cin, name);
+
+  
+
+
+
+}

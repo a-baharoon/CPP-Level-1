@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void MyFunction1() {
+  int x = 500;
+  cout << "The value of x inside function is: " << x << endl;
+
+
+
+int main() {
+
+	int secondsNumber = 0;
+	cin >> secondsNumber;
+	secondsToDaysHoursMinutesSeconds(secondsNumber);
+
+  return 0;
+}

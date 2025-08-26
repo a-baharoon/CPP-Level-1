@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+struct strEmpCard {
+
+
+
+};
+
+
+void readEmpCardInfo(strEmpCard &emp1) {
+
+
+}
+
+
+
+void printEmpCardInfo(strEmpCard &emp1) {
+
+
+}
+
+
+
+int main()
+{
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  return 0;
+}

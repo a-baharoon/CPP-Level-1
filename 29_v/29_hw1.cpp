@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+
+enum enColor { Red, Green, Yellow, Blue };
+enum enGender { Male, Female };
+enum enMartialStatus { Single, Married };
+
+struct stAddress {
+
+	string streetName;
+	string buildingNum;
+	string POBox;
+	string zipCode;
+};
+
+struct stContactInfo {
+
+	string phone;
+	string email;
+	stAddress Address;
+
+};
+
+struct stPerson {
+
+	string firstName;
+	string lastName;
+
+	stContactInfo ContactInfo;
+
+	enMartialStatus MartialStatus;
+	enGender Gender;
+	enColor Color;
+};
+
+
+
+
+
+int main() {
+
+	stPerson Person1;
+
+	Person1.firstName = "Abdulrahman";
+	Person1.lastName = "-------------";
+
+	Person1.ContactInfo.email = "com@xyz.net";
+	Person1.ContactInfo.phone = "+966507651234";
+	Person1.ContactInfo.Address.buildingNum = "58";
+	Person1.ContactInfo.Address.POBox = "2713";
+	Person1.ContactInfo.Address.zipCode = "87653";
+	Person1.ContactInfo.Address.streetName = "Karfor Street";
+
+	Person1.MartialStatus = enMartialStatus::Married;
+	Person1.Gender = enGender::Male;
+	Person1.Color = enColor::Yellow;
+
+
+	cout << "=== Person Information ===" << endl;
+	cout << "First Name     : " << Person1.firstName << endl;
+	cout << "Last Name      : " << Person1.lastName << endl;
+	cout << "Email          : " << Person1.ContactInfo.email << endl;
+	cout << "Phone          : " << Person1.ContactInfo.phone << endl;
+	cout << "Street Name    : " << Person1.ContactInfo.Address.streetName << endl;
+	cout << "Building Number: " << Person1.ContactInfo.Address.buildingNum << endl;
+	cout << "PO Box         : " << Person1.ContactInfo.Address.POBox << endl;
+	cout << "Zip Code       : " << Person1.ContactInfo.Address.zipCode << endl;
+	cout << "Marital Status : " << Person1.MartialStatus << endl;
+	cout << "Gender         : " << Person1.Gender << endl;
+	cout << "Color          : " << Person1.Color << endl;
+
+	return 0;
+}

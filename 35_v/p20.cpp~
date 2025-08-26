@@ -1,0 +1,14 @@
+#include <iostream
+#include <cmath>
+
+double circleAreaInscribedInSquare(double A) {
+
+  double circleArea = 3.14 * pow(A/2, 2);
+  return circleArea;
+
+
+
+int main() {
+
+  return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+struct strInfo
+{
+  string FirstName;
+  string LastName;
+  int Age;
+  string Phone;
+};
+
+int main ()
+{
+
+  
+  return 0;
+}

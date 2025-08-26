@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+
+int powerCalculator(int number, int m) {
+
+  int power = pow(number, m);
+
+  return power; 
+}
+int main() {
+
+  
+
+
+  return 0;
+}

@@ -1,0 +1,35 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() 
+{
+    string st1 = "43.22";
+    // float double integer 
+	
+	int N1 = 20;
+    // to string
+	
+	double N2 = 35.5;
+    // to string
+	
+	float N3 = 55.23f; 
+    // to string, integer (use all 3 ways)
+    
+    int st2;
+	double st3;
+	float st4;
+    
+	st2 = stoi(st1);
+	cout << st2 <<  1 << endl;
+     // from strings explicitly to int and double
+    
+	st3 = stod(st1);    
+    cout << st3 <<  22 << endl;
+    
+	st4 = stof(st1);
+    cout << st4 << endl;
+	
+	return 0;
+}

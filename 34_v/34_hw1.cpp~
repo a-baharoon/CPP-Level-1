@@ -1,0 +1,26 @@
+#include <iostream> 
+using namespace std;
+
+int mySumFunction()
+{
+	int Number1 = -1; 
+	cout << "Please enter Number1? " << endl;
+	cin >> Number1; 
+	
+	int Number2 = -1;
+	cout << "Please enter Number2 " << endl;
+	cin >> Number2;
+
+	cout <<"********************************************************" << endl;
+	return Number1 + Number2; 
+
+}
+
+
+int main() {
+
+
+cout << mySumFunction() << endl;
+
+
+}

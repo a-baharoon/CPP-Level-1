@@ -1,0 +1,99 @@
+```c
+#include <iostream>
+
+using namespace std;
+
+/*
+    #38
+    Problem:
+    Write a program to ask the user to enter:
+
+    • Month
+
+    Then print the month as follows:
+    • 1  → Print January
+    • 2  → Print February
+    • 3  → Print March
+    • 4  → Print April
+    • 5  → Print May
+    • 6  → Print June
+    • 7  → Print July
+    • 8  → Print August
+    • 9  → Print September
+    • 10 → Print October
+    • 11 → Print November
+    • 12 → Print December
+    • Otherwise → Print “Wrong Month” and ask the user to enter the Month again
+
+    Example:
+
+    Inputs:
+    11
+
+    Outputs:
+    November
+*/
+
+int main()
+{
+    int month;
+
+    cout << "Enter Month (1-12): ";
+    cin >> month;
+
+    if (month == 1)
+    {
+        cout << "January" << endl;
+    }
+    else if (month == 2)
+    {
+        cout << "February" << endl;
+    }
+    else if (month == 3)
+    {
+        cout << "March" << endl;
+    }
+    else if (month == 4)
+    {
+        cout << "April" << endl;
+    }
+    else if (month == 5)
+    {
+        cout << "May" << endl;
+    }
+    else if (month == 6)
+    {
+        cout << "June" << endl;
+    }
+    else if (month == 7)
+    {
+        cout << "July" << endl;
+    }
+    else if (month == 8)
+    {
+        cout << "August" << endl;
+    }
+    else if (month == 9)
+    {
+        cout << "September" << endl;
+    }
+    else if (month == 10)
+    {
+        cout << "October" << endl;
+    }
+    else if (month == 11)
+    {
+        cout << "November" << endl;
+    }
+    else if (month == 12)
+    {
+        cout << "December" << endl;
+    }
+    else
+    {
+        cout << "Wrong Month, please enter a valid month (1-12)." << endl;
+    }
+
+    return 0;
+}
+```
